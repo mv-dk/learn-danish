@@ -1,0 +1,59 @@
+body {
+  background-color: #ffeeaa;
+  direction:ltr;
+  font-size: 26px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.monospace {
+  font-family: "monospace";
+}
+
+#pa-letter {
+  background-color: #f0f0f0;
+  display: block;
+  font-size: 2em;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hoverVisible {
+  display:inline;
+  color: red;
+  background-color: red;
+}
+.hoverVisible:hover {
+  display:inline;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px dashed;
+  margin: -1px;
+}
+
+table {
+  border: 1px black solid;
+}
+
+th {
+  background-color: #dadada;
+  border: 1px black solid;
+  padding: 10px;
+}
+
+td {
+  background-color: #fafafa;
+  border: 1px black solid;
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8 ">
+<title>دنمرکی</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="filter.js"></script>
+<script type="text/javascript">
+function transformClickableParagraphToClickableLetters(elementId){
+  var element = document.getElementById(elementId);
+  var text = element.innerText;
+  element.innerText = '';
+
+  for (var i = 0; i < text.length; i++){
+	var newSpan = document.createElement("span");
+    newSpan.textContent = text.charAt(i);
+    if (newSpan.textContent != ' ') {
+      newSpan.classList.add("link");
+    }
+    element.appendChild(newSpan);
+  }
+  
+  element.addEventListener("click", function(e){
+    showPersianLetter(e.target.textContent);
+  });
+}
+
+function showPersianLetter(latinLetter){
+  latinLetter = latinLetter.toLowerCase();
+  if (latinLetter == "æ") latinLetter = "ae";
+  else if (latinLetter == "ø") latinLetter = "oe";
+  else if (latinLetter == "å") latinLetter = "aa";
+  var container = document.getElementById("pa-letter");
+  var result = "";
+  var map = {a: "آ \\ ا \\ ع \\ َ", b: "ب", c: "س \\ ک", d:"د", e:"اِ", f:"ف", g:"گ", h:"ه \\ ح", i:"ی", j:"ج", k:"ک", l:"ل", m:"م", n:"ن", o:"و", p:"پ", q:"ق", r:"ر \\ غ", s:"س \\ ص", t:"ت", u:"و \\ ُ", v:"و", w:"و", x:"کس", y:"", z:"", ae:"َ", oe:"", aa:"آ \\ و"};
+  if (map.hasOwnProperty(latinLetter)) {
+    result = map[latinLetter];
+  }
+  container.innerText = result;
+}
+
+addOnload(function() {
+  transformClickableParagraphToClickableLetters("clickableLetters1");
+  transformClickableParagraphToClickableLetters("clickableLetters2");
+});
+					  
+<!-- var oldOnload = undefined; -->
+<!-- if (window.onload != undefined) { -->
+<!--   oldOnload = window.onload; -->
+<!-- } -->
+<!-- window.onload = function() { -->
+<!--   if (oldOnload != undefined) { -->
+<!--     oldOnload(); -->
+<!--   } -->
+<!--   transformClickableParagraphToClickableLetters("clickableLetters1"); -->
+<!--   transformClickableParagraphToClickableLetters("clickableLetters2"); -->
+<!-- }; -->
+</script>
+</head>
+<body>
+<h1>خوش امدی</h1>
+<p class="monospace letters" id="clickableLetters1">
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z &AElig; &Oslash; &Aring;
+</p>
+<p class="monospace letters" id="clickableLetters2">
+a b c d e f g h i j k l m n o p q r s t u v w x y z &aelig; &oslash; &aring;
+</p>
+<div id="pa-letter">:)</div>
+<p>
+  <ul>
+	<li>من = jeg</li>
+	<li>نو = du</li>
+	<li>او = han مردانه / hun مؤنث / den / det</li>
+	<li>ما = vi</li>
+	<li>شما = I</li>
+	<li>اونها = de</li>
+  </ul>
+</p>
+
+<hr />
+
+<p>
+دیدن \ بین = at <span class="bold underline">se</span>
+</p>
+<p>
+  <ul>
+	<li>من می بینم = jeg se<span class="underline">r</span></li>
+	<li>تو می بینی = du se<span class="underline">r</span></li>
+	<li>او می بینه = han se<span class="underline">r</span></li>
+	<li>ما می بینیم = vi se<span class="underline">r</span></li>
+	<li>شما می بینین = I se<span class="underline">r</span></li>
+	<li>اونهامی بینن = de se<span class="underline">r</span></li>
+  </ul>
+</p>
+<p>
+یک جونه = et hus
+</p>
+<p>
+<ul>
+  <li>من یک خانه را می بینم = Jeg ser et hus</li>
+  <li>تو یک خانه را می بینی = <span class="hoverVisible">Du ser et hus</span></li>
+  <li>او یک خانه ار می بینه = <span class="hoverVisible">Han ser et hus</span></li>
+  <li>ما یک خانه را می بینیم = Vi ser <span class="hoverVisible">et hus</span></li>
+  <li>شما یک خانه ار می بینین = I ser et hus</li>
+  <li>اونها یک خانه ار می بینن = De ser et hus</li>
+  <li>
+</ul>
+<p>
+<p>
+  <ul>
+	<li>یک مرد = en mand</li>
+	<li>یک زن = en kvinde</li>
+	<li>یک پسر = en dreng</li>
+	<li>یک دختر = en pige</li>
+  </ul>
+</p>
+<p>
+  <ul>
+	<li>من یک مرد را می بینم = Jeg ser en mand</li>
+	<li>من یک زن را می بینم = <span class="hoverVisible">Jeg ser en kvinde</span></li>
+	<li>من یک پدر را می بینم = <span class="hoverVisible">Jeg ser en dreng</span></li>
+	<li>من خاهر را می بینم = <span class="hoverVisible">Jeg ser en pige</span></li>
+</li>
+</p>
+
+</body>
+</html>
