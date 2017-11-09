@@ -11,8 +11,6 @@ function removeClass(element, className){
   element.classList.remove(className);
 }
 
-addOnload(addClickListenersToHoverElements);
-
 function addOnload(func) {
 	if (window.onload != undefined) {
 		var oldOnload = window.onload;
@@ -25,3 +23,5 @@ function addOnload(func) {
 		window.onload = func;
 	}
 }
+
+addOnload(addClickListenersToHoverElements);

@@ -1,59 +1,100 @@
 body {
-  background-color: #ffeeaa;
-  direction:ltr;
-  font-size: 26px;
+	margin-left: 10%;
+	background-color: #ffeeaa;
+	direction:ltr;
+	font-size: 26px;
 }
 
 .bold {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .underline {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .monospace {
-  font-family: "monospace";
+	font-family: "monospace";
 }
 
 #pa-letter {
-  background-color: #f0f0f0;
-  display: block;
-  font-size: 2em;
+	background-color: #f0f0f0;
+	display: block;
+	font-size: 2em;
 }
 
 .link {
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .hoverVisible {
-  display:inline;
-  color: red;
-  background-color: red;
+	display:inline;
+	color: red;
+	background-color: red;
 }
 .hoverVisible:hover {
-  display:inline;
-  color: black;
-  background-color: transparent;
-  cursor: pointer;
-  border: 1px dashed;
-  margin: -1px;
+	display:inline;
+	color: black;
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px dashed;
+	margin: -1px;
 }
 
 table {
-  border: 1px black solid;
+	border-style: solid;
+	border-color: gray;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 4px;
+	border-left-width: 3px;
+	border-collapse: collapse;
 }
 
 th {
-  background-color: #dadada;
-  border: 1px black solid;
-  padding: 10px;
+	background-color: #dadada;
+	padding: 10px;
+}
+
+.dark {
+	background-color: #dadada;
+}
+
+.darker {
+	background-color: gray;
+}
+
+.leftborder {
+	border-left: 1px gray solid;
 }
 
 td {
-  background-color: #fafafa;
-  border: 1px black solid;
+	background-color: #fafafa;
+	padding: 10px 20px 10px 20px;  
 }
+
+.persian {
+	direction:rtl;
+}
+
+div.leftColumn{
+	width: 50%;
+	float:left;
+	clear:left;
+}
+
+.marking1 {
+	background-color: aqua;
+}
+
+.marking2 {
+	background-color: yellow;
+}
+
+.marking3 {
+	background-color: pink;
+}
+
 
