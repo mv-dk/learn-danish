@@ -86,6 +86,6 @@ for i in "$exampleLines"; do
 done
 
 fileName=$(echo $key | tr '[:upper:]' '[:lower:]' | tr ' ' '_')".html"
-echo "include(generator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg)" | m4 > $outputFolder/$fileName
+echo "include(nounPageGenerator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg)" | m4 > $outputFolder/$fileName
 
 exit 0 
