@@ -2,7 +2,7 @@ function isNounTable(t){
 	return t.getAttribute("data-type") === "nounTable";
 }
 
-function populateTable(t) {
+function populateNounTable(t) {
 	var singularIndefinite = t.getAttribute("data-sgi");
 	var singularDefinite = t.getAttribute("data-sgd");
 	var pluralIndefinite = t.getAttribute("data-pli");
@@ -15,20 +15,9 @@ function populateTable(t) {
 	t.appendChild(contentsRow);
 }
 
-function createTableRow(/*array*/ contents, /*bool*/ isHeader) {
-	var tr = document.createElement("tr");
-	var cells = contents.map(c => {
-		var cc = document.createElement("t"+(isHeader?"h":"d"));
-		cc.innerText = c;
-		return cc;
-	});
-	cells.forEach(cell => tr.appendChild(cell));
-	return tr;
-}
-
 var tables = document.getElementsByTagName("table");
 
 
 
-tables.filter(t => isNounTable(t)).forEach(t => populateTable(t));
+tables.filter(t => isNounTable(t)).forEach(t => populateNounTable(t));
 
