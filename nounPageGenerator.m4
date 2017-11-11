@@ -40,6 +40,8 @@ define(`m4_nounExamples',`ifelse(`',`$1',`',
 # $3 = Danish singular definite
 # $4 = Danish plural indefinite
 # $5 = Danish plural definite
+# $6 = Example sentences
+# $7 = References (5 lists: nouns, verbs, adjectives, phrases, lessons)
 define(`m4_nounTemplate',`
 m4_header()
 
@@ -51,7 +53,28 @@ m4_nounTable(`$2',`$3',`$4',`$5')
 
 m4_nounExamples(`$6')
 
+<hr />
+<h3>Referencer</h2>
+ifelse(m4_arg1$7,`',`',m4_references(`Navneord',`nouns',m4_arg1$7))
+ifelse(m4_arg2$7,`',`',m4_references(`Udsagnsord',`verbs',m4_arg2$7))
+ifelse(m4_arg3$7,`',`',m4_references(`Tillægsord',`adjectives',m4_arg3$7))
+ifelse(m4_arg4$7,`',`',m4_references(`Udtryk',`phrases',m4_arg4$7))
+ifelse(m4_arg5$7,`',`',m4_references(`Lektioner',`lessons',m4_arg5$7))
+
 m4_nounPageFooter')
 
-#m4_nounTemplate(man,en mand,manden,flere mænd,alle mændene,`((ex1da,ex1fa),(ex2da,ex2fa))')
+# if $1 = ((a,b)) return a
+define(`m4_unpack_arg1',`m4_arg1'm4_arg1$1)
+# if $1 = ((a,b)) return b
+define(`m4_unpack_arg2',`m4_arg2'm4_arg1$1)
+
+define(`m4_references',`ifelse(`',`$3',`',
+`
+<h4>$1</h4>
+<ul>
+	m4_foreach(m4_varJ,$3,`<li><a href="/fa-da/$2/m4_unpack_arg1(m4_varJ).html">m4_unpack_arg2(m4_varJ)</a></li>
+')
+</ul>')')
+
 divert(0)dnl
+m4_nounTemplate(man,en mand,manden,flere mænd,alle mændene,`((ex1da,ex1fa),(ex2da,ex2fa))',`(((human,et menneske),(person,en person),(father,en far)),((man,at bemande)))')

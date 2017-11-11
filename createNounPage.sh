@@ -2,13 +2,44 @@
 
 if [ "-h" = "$1" -o "--help" = "$1" ]; then
 	echo -e	"
-Usage: ./createNounPage.sh KEY output_folder
---------------------------------------------------------------------------------
-    KEY: a mandatory, all-uppercase key used for looking up the word in the
+Usage: ./createNounPage.sh KEY [output_folder] [inflection_file] [examples_file]
+
+    KEY: 
+         A mandatory, all-uppercase key used for looking up the word in the
          inflections file and the examples file
 
-    Example: ./createNounPage.sh MAN nouns
-	     This will generate a noun page \"man.html\" in the \"nouns\" folder 
+    output_folder:
+         An optional output folder. If none is specified, output to \"nouns/\"
+
+	inflection_file:
+         An optional csv file in which the following columns must be defined 
+         in the top:
+           - key: An all-caps identity of the noun
+           - foreign-sg: The foreign language singular form of the noun
+           - da-sg-i: The Danish singular indefinite form of the noun
+           - da-sg-d: The Danish singular definite form of the noun
+           - da-pl-i: The Danish plural indefinite form of the noun
+           - da-pl-d: The Danish plural definite form of the noun
+
+    examples_file:
+         An optional csv file in which the following columns must be defined
+         in the top:
+           - key: An all-caps identity of the noun
+           - da: Danish example sentence using the noun
+
+    Examples:
+
+        Generate a noun page \"man.html\" in the \"nouns\" folder:
+        ~$ ./createNounPage.sh MAN
+
+        Generate a noun page \"man.html\" in the \"myNouns\" folder:
+        ~$ ./createNounPage.sh MAN myNouns
+
+        Generate a noun page \"man.html\" in the \"nouns\" folder using
+        the inflection file \"danishNouns.csv\" and the examples file 
+        \"funnySentences.csv\":
+        ~$ ./createNounPage.sh MAN nouns danishNouns.csv funnySentences.csv
+
 "	
 	exit 99;
 fi
@@ -17,6 +48,7 @@ if [ -z "$1" ]; then
 	echo "Key word is missing"
 	exit 1;
 fi
+
 
 key="$1"
 outputFolder="$2"
@@ -79,6 +111,8 @@ function get-examples {
 foreignWord=$(get-foreign-word $nounsFile $key)
 inflections=$(get-inflections $nounsFile $key)
 examples=$(get-examples $examplesFile $key)
+
+# todo: It assumes the order of the example columns. 
 exampleLines=$(echo "examples: $examples" | sed -e "s/^[^;]*;\([^;]*\);\(.*\)$/\`(\`\2',\`\1')'/")
 examplesArg=""
 for i in "$exampleLines"; do

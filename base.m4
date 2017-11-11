@@ -5,6 +5,8 @@ include(`foreach.m4')
 #m4_arg1 is already defined in foreach.m4
 define(`m4_arg2',`$2')
 define(`m4_arg3',`$3')
+define(`m4_arg4',`$4')
+define(`m4_arg5',`$5')
 
 define(`m4_header',`<!DOCTYPE html>
 <html lang="fa">
