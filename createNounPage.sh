@@ -55,6 +55,13 @@ outputDir="$2"
 nounsFile="nouns.csv"
 examplesFile="nounExamples.csv"
 
+if ! [ -d "$outputDir" ]; then
+	mkdir "$outputDir"
+	if [ $? -ne 0 ]; then
+		exit 1
+	fi
+fi
+
 function get-inflections {
 	pFile="$1"
 	pKey="$2"

@@ -1,12 +1,12 @@
 #!/bin/bash
 
-outputFolder="$1"
+outputDir="$1"
 outputFileName="index.html"
 
-if [ -z $outputFolder ]; then
-	outputFolder="./"	
+if [ -z $outputDir ]; then
+	outputDir="./"	
 fi
 
-m4 templates/index.htmlt > "$outputFolder/$outputFileName"  
+m4 templates/index.htmlt > "$outputDir/$outputFileName"  
 
 exit 0
