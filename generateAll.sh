@@ -18,7 +18,7 @@ result=0
 ./generateAllNounPages.sh $outputDir/nouns
 
 # create one allNouns page
-./generateNounListPage.sh $outputDir
+./generateNounListPage.sh $outputDir/nouns
 
 # create all verb pages
 #./createAllVerbPages.sh $outputDir/verbs
