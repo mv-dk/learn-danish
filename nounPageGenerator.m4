@@ -34,6 +34,20 @@ define(`m4_nounExamples',`ifelse(`',`$1',`',
 	m4_foreach(m4_varI,$1,`m4_nounExample(m4_varI)')
 </ul>')')
 
+# if $1 = ((a,b)) return a
+define(`m4_unpack_arg1',`m4_arg1'm4_arg1$1)
+# if $1 = ((a,b)) return b
+define(`m4_unpack_arg2',`m4_arg2'm4_arg1$1)
+
+define(`m4_references',`ifelse(`',`$3',`',
+`
+<h4>$1</h4>
+<ul>
+	m4_foreach(m4_varJ,$3,`<li><a href="/fa-da/$2/m4_unpack_arg1(m4_varJ).html">m4_unpack_arg2(m4_varJ)</a></li>
+')
+</ul>')')
+
+
 # Noun template page
 # $1 = Foreign word
 # $2 = Danish singular indefinite
@@ -54,7 +68,7 @@ m4_nounTable(`$2',`$3',`$4',`$5')
 m4_nounExamples(`$6')
 
 <hr />
-<h3>Referencer</h2>
+ifelse(m4_arg1$7,`',`',<h3>Referencer</h3>)
 ifelse(m4_arg1$7,`',`',m4_references(`Navneord',`nouns',m4_arg1$7))
 ifelse(m4_arg2$7,`',`',m4_references(`Udsagnsord',`verbs',m4_arg2$7))
 ifelse(m4_arg3$7,`',`',m4_references(`Tillægsord',`adjectives',m4_arg3$7))
@@ -63,18 +77,5 @@ ifelse(m4_arg5$7,`',`',m4_references(`Lektioner',`lessons',m4_arg5$7))
 
 m4_nounPageFooter')
 
-# if $1 = ((a,b)) return a
-define(`m4_unpack_arg1',`m4_arg1'm4_arg1$1)
-# if $1 = ((a,b)) return b
-define(`m4_unpack_arg2',`m4_arg2'm4_arg1$1)
-
-define(`m4_references',`ifelse(`',`$3',`',
-`
-<h4>$1</h4>
-<ul>
-	m4_foreach(m4_varJ,$3,`<li><a href="/fa-da/$2/m4_unpack_arg1(m4_varJ).html">m4_unpack_arg2(m4_varJ)</a></li>
-')
-</ul>')')
-
+#m4_nounTemplate(man,en mand,manden,flere mænd,alle mændene,`((ex1da,ex1fa),(ex2da,ex2fa))',`(((human,et menneske),(person,en person),(father,en far)),((man,at bemande)))')
 divert(0)dnl
-m4_nounTemplate(man,en mand,manden,flere mænd,alle mændene,`((ex1da,ex1fa),(ex2da,ex2fa))',`(((human,et menneske),(person,en person),(father,en far)),((man,at bemande)))')

@@ -1,4 +1,3 @@
-divert(-1)
 include(`forloop.m4')
 include(`foreach.m4')
 
@@ -28,5 +27,3 @@ define(`m4_soundLink',`<img src="/fa-da/images/speaker.svg" class="speakerIcon" 
 
 define(`m4_noun_link',`<a href="/fa-da/noun/`$1'">`$2'</a>')
 define(`m4_verb_link',`<a href="/fa-da/verb/`$1'">`$2'</a>')
-
-divert(0)dnl
