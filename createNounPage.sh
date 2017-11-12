@@ -51,7 +51,7 @@ fi
 
 
 key="$1"
-outputFolder="$2"
+outputDir="$2"
 nounsFile="nouns.csv"
 examplesFile="nounExamples.csv"
 
@@ -128,6 +128,6 @@ done
 references=$(get-references $referencesFile $key)
 
 fileName=$(echo $key | tr '[:upper:]' '[:lower:]' | tr ' ' '_')".html"
-echo "include(nounPageGenerator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg)" | m4 > $outputFolder/$fileName
+echo "include(nounPageGenerator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg)" | m4 > $outputDir/$fileName
 
 exit 0 
