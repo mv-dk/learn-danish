@@ -17,7 +17,7 @@ define(`m4_unpack_arg4',`m4_arg4'm4_arg1$1)
 define(`m4_unpack_arg5',`m4_arg5'm4_arg1$1)
 
 define(`m4_topBar',`
-<div id="topBar"><a href="..">Back</a></div>
+<div id="topBar"><a href="..">&larr; Tilbage</a></div>
 ')
 
 define(`m4_header',`<!DOCTYPE html>

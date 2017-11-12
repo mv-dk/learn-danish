@@ -12,7 +12,20 @@ div#topBar {
 	top: 0px;
 	left: 0px;
 	font-size: 20px;
-	background-color: red;
+	background-color: rgba(255,249,202,0.8);
+	padding-left: 1em;
+}
+
+div#topBar a {
+	color: black;
+	text-decoration: none;
+}
+
+div#topBar a:hover {
+	color: gray;
+	border: dotted;
+	border-width: 1px;
+	margin: -1px;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -23,6 +36,44 @@ div#topBar {
 
 	div#topBar {
 		font-size: 45px;
+	}
+}
+
+.hoverVisible {
+	display:inline;
+	color: rgba(0,0,0,0);
+	background-color: #efde9e;
+	margin: -1px;
+	border-radius: 4px;
+	border-style: outset;
+	border-width: 2px;
+}
+.hoverVisible:hover {
+	display:inline;
+	color: rgba(0,0,0,0.25);
+	background-color: rgba(239,222,158,0.75);
+	cursor: pointer;
+	filter: blur(5px);
+	
+}
+
+@media print {
+	body {
+		font-size: 14px;
+	}
+	div#topBar {
+		display:none;
+	}
+	.hoverVisible {
+		color: rgba(0,0,0,0);
+		background-color: rgba(0,0,0,0);
+		border-radius: 0px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid gray;
+		border-style: dashed;
+		width:100%;
 	}
 }
 
@@ -56,20 +107,6 @@ hr {
 	cursor: pointer;
 }
 
-.hoverVisible {
-	display:inline;
-	color: red;
-	background-color: red;
-}
-.hoverVisible:hover {
-	display:inline;
-	color: black;
-	background-color: transparent;
-	cursor: pointer;
-	border: 1px dashed;
-	margin: -1px;
-}
-
 table {
 	border-style: solid;
 	border-color: gray;
@@ -78,6 +115,11 @@ table {
 	border-bottom-width: 4px;
 	border-left-width: 3px;
 	border-collapse: collapse;
+}
+
+li {
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 th {
