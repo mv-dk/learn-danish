@@ -55,7 +55,12 @@ outputDir="$2"
 nounsFile="nouns.csv"
 examplesFile="nounExamples.csv"
 
+if [ -z "$outputDir" ]; then
+	outputDir="out"
+fi
+
 if ! [ -d "$outputDir" ]; then
+	
 	mkdir "$outputDir"
 	if [ $? -ne 0 ]; then
 		exit 1
@@ -112,7 +117,8 @@ function get-row-with-key {
 function get-examples {
 	pFile="$1"
 	pKey="$2"
-	grep "^$pKey" $pFile
+	grep "^$pKey" $pFile || echo ""
+	
 }
 
 function get-references {
@@ -123,13 +129,15 @@ function get-references {
 foreignWord=$(get-foreign-word $nounsFile $key)
 inflections=$(get-inflections $nounsFile $key)
 examples=$(get-examples $examplesFile $key)
-
-# todo: It assumes the order of the example columns. 
-exampleLines=$(echo "examples: $examples" | sed -e "s/^[^;]*;\([^;]*\);\(.*\)$/\`(\`\2',\`\1')'/")
 examplesArg=""
-for i in "$exampleLines"; do
-	examplesArg=$(echo "\`($i)'" | tr '\n' ',')
-done
+
+if [ "$examples" != "" ]; then
+	# todo: It assumes the order of the example columns. 
+	exampleLines=$(echo "$examples" | sed -e "s/^[^;]*;\([^;]*\);\(.*\)$/\`(\`\2',\`\1')'/")
+	for i in "$exampleLines"; do
+		examplesArg=$(echo "\`($i)'" | tr '\n' ',')
+	done
+fi
 
 # todo: Read references
 references=$(get-references $referencesFile $key)
