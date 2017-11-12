@@ -1,8 +1,8 @@
 #!/bin/bash
-
 if [ "-h" = "$1" -o "--help" = "$1" ]; then
 	echo -e	"
-Usage: ./createNounPage.sh KEY [output_folder] [inflection_file] [examples_file]
+Usage: ./generateNounPage.sh KEY [output_folder] [inflection_file] 
+       [examples_file]
 
     KEY: 
          A mandatory, all-uppercase key used for looking up the word in the
@@ -30,15 +30,15 @@ Usage: ./createNounPage.sh KEY [output_folder] [inflection_file] [examples_file]
     Examples:
 
         Generate a noun page \"man.html\" in the \"nouns\" folder:
-        ~$ ./createNounPage.sh MAN
+        ~$ ./generateNounPage.sh MAN
 
         Generate a noun page \"man.html\" in the \"myNouns\" folder:
-        ~$ ./createNounPage.sh MAN myNouns
+        ~$ ./generateNounPage.sh MAN myNouns
 
         Generate a noun page \"man.html\" in the \"nouns\" folder using
         the inflection file \"danishNouns.csv\" and the examples file 
         \"funnySentences.csv\":
-        ~$ ./createNounPage.sh MAN nouns danishNouns.csv funnySentences.csv
+        ~$ ./generateNounPage.sh MAN nouns danishNouns.csv funnySentences.csv
 
 "	
 	exit 99;

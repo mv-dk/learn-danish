@@ -15,13 +15,14 @@ if [ $result -gt 0 ]; then exit $result; fi
 result=0
 
 # create all noun pages
-./createAllNounPages.sh $outputDir/nouns
+./generateAllNounPages.sh $outputDir/nouns
 
 # create one allNouns page
-./createAllNounsPage.sh $outputDir
+./generateNounListPage.sh $outputDir
 
 # create all verb pages
 #./createAllVerbPages.sh $outputDir/verbs
+cp -r $templateDir/verbs "$outputDir/"
 
 # create one allVerb page
 #./createAllVerbsPage.sh
@@ -49,6 +50,8 @@ cp -r $templateDir/images "$outputDir/"
 cp -r $templateDir/audio "$outputDir/"
 cp -r $templateDir/video "$outputDir/"
 cp -r $templateDir/scripts "$outputDir/"
+cp -r $templateDir/lessons "$outputDir/"
+
 
 # create index page
-./createIndexPage.sh $outputDir
+./generateIndexPage.sh $outputDir
