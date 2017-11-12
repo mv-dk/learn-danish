@@ -98,3 +98,11 @@ div.leftColumn{
 }
 
 
+img.speakerIcon {
+	width: 64px;
+	height: 64px;
+}
+
+img.speakerIcon:hover {
+	cursor:pointer;
+}

@@ -108,6 +108,11 @@ function get-examples {
 	grep "^$pKey" $pFile
 }
 
+function get-references {
+	pFile="$1"
+	pKey="$2"	
+}
+
 foreignWord=$(get-foreign-word $nounsFile $key)
 inflections=$(get-inflections $nounsFile $key)
 examples=$(get-examples $examplesFile $key)
@@ -118,6 +123,9 @@ examplesArg=""
 for i in "$exampleLines"; do
 	examplesArg=$(echo "\`($i)'" | tr '\n' ',')
 done
+
+# todo: Read references
+references=$(get-references $referencesFile $key)
 
 fileName=$(echo $key | tr '[:upper:]' '[:lower:]' | tr ' ' '_')".html"
 echo "include(nounPageGenerator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg)" | m4 > $outputFolder/$fileName

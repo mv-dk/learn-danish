@@ -34,11 +34,6 @@ define(`m4_nounExamples',`ifelse(`',`$1',`',
 	m4_foreach(m4_varI,$1,`m4_nounExample(m4_varI)')
 </ul>')')
 
-# if $1 = ((a,b)) return a
-define(`m4_unpack_arg1',`m4_arg1'm4_arg1$1)
-# if $1 = ((a,b)) return b
-define(`m4_unpack_arg2',`m4_arg2'm4_arg1$1)
-
 define(`m4_references',`ifelse(`',`$3',`',
 `
 <h4>$1</h4>
