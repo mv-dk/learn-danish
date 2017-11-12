@@ -40,17 +40,16 @@ cp -r $templateDir/verbs "$outputDir/"
 #./createAllPhrasesPage.sh
 
 # create all lesson pages
-#./createAllLessonPages.sh $outputDir/lessons
+./generateAllLessonPages.sh $templateDir/lessons $outputDir/lessons 
 
 # create one allLessons page
 #./createAllLessonsPage.sh
 
-cp $templateDir/style.css "$outputDir/"
+cp $templateDir/*.css "$outputDir/"
 cp -r $templateDir/images "$outputDir/"
 cp -r $templateDir/audio "$outputDir/"
 cp -r $templateDir/video "$outputDir/"
 cp -r $templateDir/scripts "$outputDir/"
-cp -r $templateDir/lessons "$outputDir/"
 
 
 # create index page

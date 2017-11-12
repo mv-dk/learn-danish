@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8 ">
-<title>دنمرکی</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script src="filter.js"></script>
-</head>
-<body>
+divert(-1)
+include(`base.m4')
+divert(0)dnl
+m4_header
 
   <h1>
 Dansk
@@ -18,7 +13,7 @@ Her kan man l&aelig;re dansk.
   
 <ul>
   <li>
-	<a href="lesson1.html">
+	<a href="lessons/lesson1.html">
 	  <span class="danish">
 		Lektion 1
 	  </span>
@@ -30,7 +25,7 @@ Her kan man l&aelig;re dansk.
   </li>
 
   <li>
-	<a href="lesson2.html">
+	<a href="lessons/lesson2.html">
 	  <span class="danish">
 		Lektion 2
 	  </span>
@@ -41,29 +36,6 @@ Her kan man l&aelig;re dansk.
 	</a>
   </li>
 
-  <li>
-	<a href="lesson3.html">
-	  <span class="danish">
-		Lektion 3
-	  </span>
-	  =
-	  <span class="persian">
-		درس سه
-	  </span>
-	</a>
-  </li>
-
-  <li>
-	<a href="lesson4.html">
-	  <span class="danish">
-		Lektion 4
-	  </span>
-	  =
-	  <span class="persian">
-		درس چهار
-	  </span>
-	</a>
-  </li>
 </ul>
 
 <hr />
@@ -73,15 +45,18 @@ Navneord
 =
 اسم‌ها
 </h2>
+<ul>
+  <li><a href="/fa-da/nouns/">Alle navneord</a> (هم لسم)</li>
+</ul>
 <hr />
 
 <h2>
-Verber
+Udsagnsord
 =
 فعل‌ها
 </h2>
 <ul>
-  <li><a href="/fa-da/nouns/">Alle navneord</a> (هم لسم)</li>
+  <li><a href="/fa-da/verbs/">Alle udsagnsord</a> (هم لسم)</li>
 </ul>
 <hr />
 
@@ -90,6 +65,9 @@ Till&aelig;gsord
 =
 صفت‌ها
 </h2>
+<ul>
+  <li><a href="/fa-da/adjectives/">Alle till&aelig;gsord</a> (هم لسم)</li>
+</ul>
 <hr />
 
 <h2>
@@ -97,8 +75,9 @@ Udtryk
 =
 غبارت
 </h2>
+<ul>
+  <li><a href="/fa-da/phrases/">Alle talem&aring;der</a> (هم لسم)</li>
+</ul>
 <hr />
 
-<script type="text/javascript" src="nounTable.js" ></script>
-</body>
-</html>
+m4_footer

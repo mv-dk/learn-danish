@@ -2,11 +2,38 @@ body {
 	margin-left: 10%;
 	background-color: #ffeeaa;
 	direction:ltr;
-	font-size: 26px;
+	font-size: 24px;
+	font-family: "Noto Serif"
+}
+
+div#topBar {
+	width: 100%;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	font-size: 20px;
+	background-color: red;
+}
+
+@media screen and (max-device-width: 480px) {
+	body {
+		font-size: 50px;
+		background-color: #ffeeaa;
+	}
+
+	div#topBar {
+		font-size: 45px;
+	}
 }
 
 .bold {
 	font-weight: bold;
+}
+
+hr {
+	width: 70%;
+	height: 1px;
+	margin-bottom: 2em;
 }
 
 .underline {

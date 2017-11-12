@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8 ">
-<title>دنمرکی</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script type="text/javascript" src="/fa-da/scripts/common.js"></script>
-<script type="text/javascript" src="fa-da/scripts/filter.js"></script>
+divert(-1)
+include(`base.m4')
+divert(0)dnl
+m4_header
+
 <script type="text/javascript">
 function transformClickableParagraphToClickableLetters(elementId){
   var element = document.getElementById(elementId);
@@ -46,8 +43,6 @@ addOnload(function() {
 });
 					  
 </script>
-</head>
-<body>
 <h1>خوش امدی</h1>
 <p class="monospace letters" id="clickableLetters1">
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z &AElig; &Oslash; &Aring;
@@ -93,7 +88,6 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z &aelig; &oslash; &aring;
   <li>ما یک خانه را می بینیم = Vi ser <span class="hoverVisible">et hus</span></li>
   <li>شما یک خانه ار می بینین = I ser et hus</li>
   <li>اونها یک خانه ار می بینن = De ser et hus</li>
-  <li>
 </ul>
 <p>
 <p>
@@ -113,5 +107,4 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z &aelig; &oslash; &aring;
 </li>
 </p>
 
-</body>
-</html>
+m4_footer

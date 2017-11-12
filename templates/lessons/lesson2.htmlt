@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8 ">
-<title>دنمرکی</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
-<script type="text/javascript" src="/fa-da/scripts/common.js"></script>
-<script type="text/javascript" src="/fa-da/scripts/filter.js"></script>
-</head>
-<body>
+divert(-1)
+include(`base.m4')
+divert(0)dnl
+m4_header
 
   <h1>Jeg, du, han/hun</h1>
 
@@ -89,5 +83,4 @@
   </div>
   <span class="underline marking2">Hun</span>&nbsp;er en kvinde.
 </div>
-</body>
-</html>
+m4_footer
