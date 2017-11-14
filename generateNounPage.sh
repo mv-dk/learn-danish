@@ -122,34 +122,6 @@ function get-examples {
 	
 }
 
-# function get-references-from-file {
-# 	pFile="$1"
-# 	pKey="$2"
-# 	refs=$(grep -w $pKey $pFile || echo "")
-# 	if [ "$refs" != "" ]; then
-# 		refs=$(echo $refs | tr ' ' ',' | tr ',' "\n" | sort -u | tr '\n' ';' | sed -e 's/\(.*\);$/\1/' -e "s/;/',\`/g")
-# 		refs=$(echo "\`(\`$refs')'")
-# 	fi
-	
-# 	echo "$refs"
-# }
-
-# function create-sorted-copy {
-# 	pFile="$1"
-# 	pKeepHeader="$2" # 1 or 0
-# 	pTmpFile=$(tempfile)
-# 	tail -n +2 | sort -u $pFile > $pTmpFile
-# 	echo "$pTmpFile"
-# }
-
-# function get-references-from-file {
-#     pRefFile="$1"
-# 	sortedNouns=$(create-sorted-copy $nounsFile)
-# 	sortedRefs=$(create-sorted-copy $pRefFile)
-	
-# 	join -t ';' $sortedNouns $sortedRefs -1 1 -2 1 
-# }
-
 function get-references-from-file {
 	pRefsFile="$1"
 	pKey="$2"
@@ -171,8 +143,12 @@ function format-reference-list {
 function get-references {
 	pKey="$1"
 	nounRefs=$(format-reference-list "$(get-references-from-file "nounReferences.lst" $pKey)")
+	#verbRefs=$(format-reference-list "$(get-references-from-file "verbReferences.lst" $pKey)")
+	#adjectiveRefs=$(format-reference-list "$(get-references-from-file "adjectiveReferences.lst" $pKey)")
+	#phraseRefs=$(format-reference-list "$(get-references-from-file "phraseReferences.lst" $pKey)")
+	#lessonRefs=$(format-reference-list "$(get-references-from-file "lessonReferences.lst" $pKey)")
 	#nouns, verbs, adjectives, phrases, lessons
-	echo "\`(""$nounRefs"")'"
+	echo "\`($nounRefs,$verbRefs)'"
 }
 
 foreignWord=$(get-foreign-word $nounsFile $key)
