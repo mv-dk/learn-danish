@@ -22,7 +22,7 @@ Usage: ./generateNounPage.sh KEY [output_folder] [inflection_file]
            - da-pl-d: The Danish plural definite form of the noun
 
     examples_file:
-         An optional csv file in which the following columns must be defined
+         An optional lst file in which the following columns must be defined
          in the top:
            - key: An all-caps identity of the noun
            - da: Danish example sentence using the noun
@@ -49,11 +49,12 @@ if [ -z "$1" ]; then
 	exit 1;
 fi
 
-
 key="$1"
 outputDir="$2"
 nounsFile="nouns.csv"
 examplesFile="nounExamples.csv"
+referencesFile="references.lst"
+nounReferencesFile="nounReferences.lst"
 
 if [ -z "$outputDir" ]; then
 	outputDir="out"
@@ -121,15 +122,63 @@ function get-examples {
 	
 }
 
+# function get-references-from-file {
+# 	pFile="$1"
+# 	pKey="$2"
+# 	refs=$(grep -w $pKey $pFile || echo "")
+# 	if [ "$refs" != "" ]; then
+# 		refs=$(echo $refs | tr ' ' ',' | tr ',' "\n" | sort -u | tr '\n' ';' | sed -e 's/\(.*\);$/\1/' -e "s/;/',\`/g")
+# 		refs=$(echo "\`(\`$refs')'")
+# 	fi
+	
+# 	echo "$refs"
+# }
+
+# function create-sorted-copy {
+# 	pFile="$1"
+# 	pKeepHeader="$2" # 1 or 0
+# 	pTmpFile=$(tempfile)
+# 	tail -n +2 | sort -u $pFile > $pTmpFile
+# 	echo "$pTmpFile"
+# }
+
+# function get-references-from-file {
+#     pRefFile="$1"
+# 	sortedNouns=$(create-sorted-copy $nounsFile)
+# 	sortedRefs=$(create-sorted-copy $pRefFile)
+	
+# 	join -t ';' $sortedNouns $sortedRefs -1 1 -2 1 
+# }
+
+function get-references-from-file {
+	pRefsFile="$1"
+	pKey="$2"
+	t1=$(tempfile)
+	t2=$(tempfile)
+	grep $pKey "$pRefsFile" | tr ',' '\n' | sort -u > "$t1"
+	tail -n +2 $nounsFile | sort -u > "$t2"
+	
+	result=$(join $t1 $t2 -1 1 -2 1 -t ';' | cut -d ';' -f1,4)
+	rm $t1 $t2
+	echo "$result" | tr '[:upper:]' '[:lower:]'
+}
+
+function format-reference-list {
+	refList=$1
+	echo "\`("$(echo "$refList" | sed -e "s/;/',\`/g" -e "s/^\(.*\)$/\`(\`\1')'/g" | tr '\n' ',')")'"
+}
+
 function get-references {
-	pFile="$1"
-	pKey="$2"	
+	pKey="$1"
+	nounRefs=$(format-reference-list "$(get-references-from-file "nounReferences.lst" $pKey)")
+	#nouns, verbs, adjectives, phrases, lessons
+	echo "\`(""$nounRefs"")'"
 }
 
 foreignWord=$(get-foreign-word $nounsFile $key)
 inflections=$(get-inflections $nounsFile $key)
 examples=$(get-examples $examplesFile $key)
-examplesArg=""
+examplesArg=","
 
 if [ "$examples" != "" ]; then
 	# todo: It assumes the order of the example columns. 
@@ -140,9 +189,12 @@ if [ "$examples" != "" ]; then
 fi
 
 # todo: Read references
-references=$(get-references $referencesFile $key)
+
+references=$(get-references $key)
 
 fileName=$(echo $key | tr '[:upper:]' '[:lower:]' | tr ' ' '_')".html"
-echo "include(nounPageGenerator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg)" | m4 > $outputDir/$fileName
+echo "include(nounPageGenerator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg $references)" | m4 > $outputDir/$fileName
+
+#echo "include(nounPageGenerator.m4) m4_nounTemplate($foreignWord,$inflections,$examplesArg $references)"
 
 exit 0 

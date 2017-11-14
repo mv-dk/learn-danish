@@ -54,7 +54,6 @@ div#topBar a:hover {
 	background-color: rgba(239,222,158,0.75);
 	cursor: pointer;
 	filter: blur(5px);
-	
 }
 
 @media print {

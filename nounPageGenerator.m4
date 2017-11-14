@@ -36,7 +36,7 @@ define(`m4_nounExamples',`ifelse(`',`$1',`',
 
 define(`m4_references',`ifelse(`',`$3',`',
 `
-<h4>$1</h4>
+<h4>Relaterede $1</h4>
 <ul>
 	m4_foreach(m4_varJ,$3,`<li><a href="/fa-da/$2/m4_unpack_arg1(m4_varJ).html">m4_unpack_arg2(m4_varJ)</a></li>
 ')
@@ -63,12 +63,13 @@ m4_nounTable(`$2',`$3',`$4',`$5')
 m4_nounExamples(`$6')
 
 <hr />
+
 ifelse(m4_arg1$7,`',`',<h3>Referencer</h3>)
-ifelse(m4_arg1$7,`',`',m4_references(`Navneord',`nouns',m4_arg1$7))
-ifelse(m4_arg2$7,`',`',m4_references(`Udsagnsord',`verbs',m4_arg2$7))
-ifelse(m4_arg3$7,`',`',m4_references(`Tillægsord',`adjectives',m4_arg3$7))
-ifelse(m4_arg4$7,`',`',m4_references(`Udtryk',`phrases',m4_arg4$7))
-ifelse(m4_arg5$7,`',`',m4_references(`Lektioner',`lessons',m4_arg5$7))
+ifelse(m4_arg1$7,`',`',m4_references(`navneord',`nouns',m4_arg1$7))
+ifelse(m4_arg2$7,`',`',m4_references(`udsagnsord',`verbs',m4_arg2$7))
+ifelse(m4_arg3$7,`',`',m4_references(`tillægsord',`adjectives',m4_arg3$7))
+ifelse(m4_arg4$7,`',`',m4_references(`udtryk',`phrases',m4_arg4$7))
+ifelse(m4_arg5$7,`',`',m4_references(`lektioner',`lessons',m4_arg5$7))
 
 m4_nounPageFooter')
 
