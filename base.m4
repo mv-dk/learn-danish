@@ -43,3 +43,5 @@ define(`m4_soundLink',`<img src="/fa-da/images/speaker.svg" class="speakerIcon" 
 
 define(`m4_noun_link',`<a href="/fa-da/noun/`$1'">`$2'</a>')
 define(`m4_verb_link',`<a href="/fa-da/verb/`$1'">`$2'</a>')
+
+define(`m4_ddg_image_link',<p><a href="https://duckduckgo.com/?q=$1&t=hj&iax=images&ia=images">Billeder af $2</a></p>)

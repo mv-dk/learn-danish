@@ -4,3 +4,23 @@ WOMAN;زن;زنان;en kvinde;kvinden;flere kvinder;alle kvinderne
 BOY;پسر;پسران;en dreng;drengen;flere drenge;alle drengene
 GIRL;دختر;دختران;en pige;pigen;flere piger;alle pigerne
 HOUSE;خانه;خانه‌ها;et hus;huset;flere huse;alle husene
+NAME;اسم;اسم‌ها;et navn;navnet;flere navne;alle navnene
+FATHER;پدر;پدر‌ها;en far / en fader;faren / faderen;flere fædre;alle fædrene
+MOTHER;مادر;مادر‌ها;en mor / en moder;moren / moderen;flere mødre;alle mødrene
+ACCIDENT;تصادف;تصادف‌ها;en ulykke;ulykken;flere ulykker;alle ulykkerne
+AIRPLANE;هواپیما;هواپیما‌ها;en flyvemaskine;flyvemaskinen;flere flyvemaskiner;alle flyvemaskinerne
+ACTOR_1;هنرپیشه;هنرپیشه;en skuespiller (1);skuespilleren;flere skuespillere;alle skuespillerne
+ACTOR_2;بازیگر;بازیکر‌ها;en skuespiller (2);skuespilleren;flere skuespillere;alle skuespillerne
+ADDRESS;آدرس;آدرش‌ها;en adresse;adressen;flere adresser;alle adresserne
+AFTERNOON;بغد از ظهر; ;en eftermiddag;eftermiddagen;flere eftermiddage;alle eftermiddagene
+AMBULANCE;آمبولانس;آمبولانس‌ها;en ambulance;ambulancen;flere ambulancer;alle ambulancerne
+ANTIBIOTIC;آنتی‌بیوتیک;آنتی‌بیوتیک‌ها;et antibiotika;antibiotikaet;noget antibiotika;al antibiotikaet
+SPRING;بهار;بهار‌ها;et forår;foråret;flere forår;alle forårene
+SUMMER;تابستان;تابستان‌ها;en sommer;sommeren;flere somre;alle somrene
+WINTER;زمستان;زمستان‌ها;en vinter;vinteren;flere vintre;alle vintrene
+AUTUMN;پاییز;پاییز‌ها;et efterår;efteråret;flere efterår;alle efterårene
+YEAR;سال;سال‌ها;et år;året;flere år;alle årene
+CLOUD;ابر;ابر‌ها;en sky;skyen;flere skyer;alle skyerne
+SKY;آسمان;آسمان‌ها;en himmel;himlen;flere himle;alle himlene
+SUN;خورشید;خورشید‌ها;en sol;solen;flere sole;alle solene
+PLANET;سیاره;سیاره‌ها;en planet;planeten;flere planeter;alle planeterne
