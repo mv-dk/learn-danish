@@ -72,19 +72,22 @@ m4_header
 
 <div style="display:flex; align-items: center;">
   <div class="leftColumn" style="width:20%" >
-	<img src="/fa-da/images/man.svg" style="height: 20vh;" />
+	<img src="m4_host/fa-da/images/man.svg" style="height: 20vh;" />
   </div>
   <span class="underline marking1">Han</span>&nbsp;er en mand.
 </div>
 
 <div style="display:flex; align-items: center;">
   <div class="leftColumn" style="width:20%">
-	<img src="/fa-da/images/woman.svg" style="height: 20vh;" />
+	<img src="m4_host/fa-da/images/woman.svg" style="height: 20vh;" />
   </div>
   <span class="underline marking2">Hun</span>&nbsp;er en kvinde.
 </div>
 
-m4_ddg_image_link(`man',`mand')
-m4_ddg_image_link(`woman',`kvinde')
+m4_ddg_image_link(`man',`Mand')
+m4_ddg_image_link(`woman',`Kvinde')
+
+m4_youtube_link(`flSY2xSemjI',`Æblemand')
+m4_youtube_link(`b0gCMrbB-Dk',`Kvinde min')
 
 m4_footer

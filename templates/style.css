@@ -174,3 +174,10 @@ img.speakerIcon {
 img.speakerIcon:hover {
 	cursor:pointer;
 }
+
+img.youtubeLink,img.ddgImageLink {
+	height: 1em;
+	width: auto;
+	vertical-align: middle;
+}
+
