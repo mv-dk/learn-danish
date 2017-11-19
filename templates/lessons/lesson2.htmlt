@@ -58,7 +58,7 @@ m4_header
 	  او
 	</td>
 	<td>
-	  <span class="marking1">han</span>/<span class="marking2">hun</span>
+	  m4_mark1(han)/m4_mark2(hun)
 	</td>
 	<td class="dark persian leftborder">
 	  انها
@@ -70,24 +70,33 @@ m4_header
 </table>
 <hr />
 
+<p>
 <div style="display:flex; align-items: center;">
-  <div class="leftColumn" style="width:20%" >
+  <div class="leftColumn" style="width:30%" >
 	<img src="m4_host/fa-da/images/man.svg" style="height: 20vh;" />
   </div>
-  <span class="underline marking1">Han</span>&nbsp;er en mand.
 </div>
-
+<div>
+  m4_mark1(Han) er en m4_noun_link(`man.html',`mand').<br />
+  m4_mark1(Han) er glad.<br />
+  m4_mark1(Han) hedder Jan.<br />
+</div>
+</p>
+<p>
 <div style="display:flex; align-items: center;">
-  <div class="leftColumn" style="width:20%">
+  <div class="leftColumn" style="width:30%">
 	<img src="m4_host/fa-da/images/woman.svg" style="height: 20vh;" />
   </div>
-  <span class="underline marking2">Hun</span>&nbsp;er en kvinde.
 </div>
-
-m4_ddg_image_link(`man',`Mand')
-m4_ddg_image_link(`woman',`Kvinde')
+<div>
+  m4_mark2(Hun) er en m4_noun_link(`woman.html',`kvinde').<br />
+  m4_mark2(Hun) er ogs&aring; glad.<br />
+</div>
+</p>
+m4_ddg_image_link(`man',`mænd')
+m4_ddg_image_link(`woman',`kvinder')
 
 m4_youtube_link(`flSY2xSemjI',`Æblemand')
-m4_youtube_link(`b0gCMrbB-Dk',`Kvinde min')
+m4_youtube_link(`b0gCMrbB-Dk',`Kvinde min',`Kim Larsen')
 
 m4_footer

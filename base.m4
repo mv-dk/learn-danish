@@ -44,9 +44,21 @@ define(`m4_footer',`</body></html>')
 
 define(`m4_soundLink',`<img src="m4_host/fa-da/images/speaker.svg" class="speakerIcon" onclick="play(&quot;$1&quot;)" />')
 
-define(`m4_noun_link',`<a href="m4_host/fa-da/noun/`$1'">`$2'</a>')
-define(`m4_verb_link',`<a href="m4_host/fa-da/verb/`$1'">`$2'</a>')
+define(`m4_noun_link',`<a href="m4_host/fa-da/nouns/`$1'">`$2'</a>')
+define(`m4_verb_link',`<a href="m4_host/fa-da/verbs/`$1'">`$2'</a>')
 
 define(`m4_ddg_image_link',`<p><img class="ddgImageLink" src="m4_imgs/ddg_image_link.svg" />&nbsp;&nbsp;<a href="https://duckduckgo.com/?q=$1&t=hj&iax=images&ia=images">Billeder af $2</a></p>')
 
-define(`m4_youtube_link',`<p><img class="youtubeLink" src="m4_imgs/youtube_link.svg" />&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=$1">$2</a></p>')
+define(`m4_youtube_link',`<p><img class="youtubeLink" src="m4_imgs/youtube_link.svg" />&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=$1">$2
+ifelse(`',$3,`',` ($3)')</a></p>')
+
+define(`m4_mark',`<mark class="underline mark$1">$2</mark>')
+define(`m4_mark1',`m4_mark(1,$1)')
+define(`m4_mark2',`m4_mark(2,$1)')
+define(`m4_mark3',`m4_mark(3,$1)')
+define(`---',`<hr />')
+
+define(`m4_danish',`<span class="danish">$1</span>')
+define(`m4_persian',`<span class="persian">$1</span>')
+
+define(`m4_lesson_link',`<a href="lessons/$3">m4_danish($1) = m4_persian($2)</a>')

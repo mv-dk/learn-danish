@@ -13,29 +13,18 @@ Her kan man l&aelig;re dansk.
   
 <ul>
   <li>
-	<a href="lessons/lesson1.html">
-	  <span class="danish">
-		Lektion 1
-	  </span>
-	  =
-	  <span class="persian">
-		درس اول
-	  </span>
-	</a>
+	m4_lesson_link(`Alfabetet og bogstaverne', `الفبا و حرف‌ها', `lesson1.html')
   </li>
-
   <li>
-	<a href="lessons/lesson2.html">
-	  <span class="danish">
-		Lektion 2
-	  </span>
-	  =
-	  <span class="persian">
-		درس دو
-	  </span>
-	</a>
+    m4_lesson_link(`Jeg og du',`من و تو', `lesson3.html')
   </li>
-
+  <li>
+    m4_lesson_link(``Mig og dig'',``من را - تو را'', `lesson4.html') 
+  </li>
+  <li>
+    m4_lesson_link(``Han, hun'',``من, تو, او'', `lesson2.html') 
+  </li>
+  
 </ul>
 
 <hr />

@@ -147,21 +147,15 @@ td {
 	direction:rtl;
 }
 
-div.leftColumn{
-	width: 50%;
-	float:left;
-	clear:left;
+.mark1 {
+	background-color: aqua;	
 }
 
-.marking1 {
-	background-color: aqua;
-}
-
-.marking2 {
+.mark2 {
 	background-color: yellow;
 }
 
-.marking3 {
+.mark3 {
 	background-color: pink;
 }
 
