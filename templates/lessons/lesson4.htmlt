@@ -1,0 +1,113 @@
+divert(-1)
+include(`base.m4')
+divert(0)dnl
+m4_header
+
+  <h1>Mig og dig</h1>
+
+<table>
+  <tr>
+	<th colspan="2">Ental</th>
+	<th colspan="2" class="leftborder">Flertal</th>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  من را
+	</td>
+	<td>
+	  mig
+	</td>
+	<td class="dark persian leftborder">
+	  ما را
+	</td>
+	<td>
+	  os
+	</td>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  نو را
+	</td>
+	<td>
+	  dig
+	</td>
+	<td class="dark persian leftborder">
+	  شما را
+	</td>
+	<td>
+	  jer
+	</td>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  او را
+	</td>
+	<td>
+	  ham/hende
+	</td>
+	<td class="dark persian leftborder">
+	  انها را
+	</td>
+	<td>
+	  dem
+	</td>
+  </tr>
+</table>
+<hr />
+
+<p>
+  <ul>
+    <li>Jeg --> mig</li>
+	<li>Du --> dig</li>
+  </ul>
+</p>
+
+<h2>{Udsagnsord} mig/dig</h2>
+<p>
+  <ul>
+    <li>{subjekt} m4_mark2({udsagnsord}) m4_mark3({objekt})</li>
+	<li>
+من m4_mark3(تو را) m4_mark2(می‌بینم)
+=
+Jeg m4_mark2(ser) m4_mark3(dig)
+	</li>
+	<li>
+تو m4_mark3(من را) m4_mark2(می‌بینم)
+=
+Du m4_mark2(ser) m4_mark3(mig)
+   </li>
+  </ul>
+</p>
+
+<h2>til mig/dig = برای من، برای تو</h2>
+<p>
+  <ul>
+    <li>
+		او این را برای m4_mark3(من) خرید
+		=  
+		Han købte den til m4_mark3(mig).
+	</li>
+	
+  </ul>
+</p>
+<h2>til mig/dig = به من، به تو</h2>
+<p>
+  <ul>
+	<li>
+		Kom hen til m4_mark3(mig)!
+		=
+		!به m4_mark3(من) بیا
+	</li>
+	<li>
+		Jeg kommer hen til dig
+		=
+		من به m4_mark3(تو) می‌ام
+	</li>
+  </ul>
+</p>
+
+<h2>for mig/dig</h2>
+<h2>af mig/dig</h2>
+
+
+m4_footer
