@@ -4,7 +4,12 @@ divert(0)dnl
 m4_header
 
   <h1>Mig og dig</h1>
-
+<p class="persian">
+وقتی که "jeg" مفعول است، "mig" می‌شه.
+</p>
+<p class="persian">
+وقتی که "du" مفعول است، "dig" می‌شه.
+</p>
 <table>
   <tr>
 	<th colspan="2">Ental</th>
@@ -12,13 +17,13 @@ m4_header
   </tr>
   <tr>
 	<td class="dark persian">
-	  من را
+	  من (مفعول)
 	</td>
 	<td>
 	  mig
 	</td>
 	<td class="dark persian leftborder">
-	  ما را
+	  ما (مفعول)
 	</td>
 	<td>
 	  os
@@ -26,13 +31,13 @@ m4_header
   </tr>
   <tr>
 	<td class="dark persian">
-	  نو را
+	  نو (مفعول)
 	</td>
 	<td>
 	  dig
 	</td>
 	<td class="dark persian leftborder">
-	  شما را
+	  شما  (مفعول)
 	</td>
 	<td>
 	  jer
@@ -40,13 +45,13 @@ m4_header
   </tr>
   <tr>
 	<td class="dark persian">
-	  او را
+	  او  (مفعول)
 	</td>
 	<td>
 	  ham/hende
 	</td>
 	<td class="dark persian leftborder">
-	  انها را
+	  انها  (مفعول)
 	</td>
 	<td>
 	  dem
@@ -57,15 +62,15 @@ m4_header
 
 <p>
   <ul>
-    <li>Jeg --> mig</li>
-	<li>Du --> dig</li>
+    <li>Jeg &rarr; mig</li>
+	<li>Du &rarr; dig</li>
   </ul>
 </p>
 
-<h2>{Udsagnsord} mig/dig</h2>
+<h2>Objekt -- مفعول</h2>
 <p>
   <ul>
-    <li>{subjekt} m4_mark2({udsagnsord}) m4_mark3({objekt})</li>
+    <li class="persian">{نهاد} m4_mark2({فعل}) m4_mark3({مفعول})</li>
 	<li>
 من m4_mark3(تو را) m4_mark2(می‌بینم)
 =
@@ -79,7 +84,7 @@ Du m4_mark2(ser) m4_mark3(mig)
   </ul>
 </p>
 
-<h2>til mig/dig = برای من، برای تو</h2>
+<h2>Til mig/dig = برای من، برای تو</h2>
 <p>
   <ul>
     <li>
@@ -90,7 +95,7 @@ Du m4_mark2(ser) m4_mark3(mig)
 	
   </ul>
 </p>
-<h2>til mig/dig = به من، به تو</h2>
+<h2>Til mig/dig = به من، به تو</h2>
 <p>
   <ul>
 	<li>
