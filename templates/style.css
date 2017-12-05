@@ -37,6 +37,12 @@ div#topBar a:hover {
 	div#topBar {
 		font-size: 45px;
 	}
+
+	audio {
+		transform-origin: left;
+		transform: scale(2);
+		margin-bottom: 1em;
+	}
 }
 
 .hoverVisible {
@@ -73,6 +79,9 @@ div#topBar a:hover {
 		border-bottom: 1px solid gray;
 		border-style: dashed;
 		width:100%;
+	}
+	audio { 
+		display:none; 
 	}
 }
 
