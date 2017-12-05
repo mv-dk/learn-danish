@@ -56,7 +56,7 @@ m4_header()
 
 <h1>`$2' = `$1'</h1>
 
-m4_soundLink(translit(`$2',( ),(_)).ogg)
+m4_soundLink(translit(`$2',( /),(__)).ogg)
 
 m4_nounTable(`$2',`$3',`$4',`$5')
 
