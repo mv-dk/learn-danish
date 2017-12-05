@@ -42,7 +42,7 @@ m4_topBar
 
 define(`m4_footer',`</body></html>')
 
-define(`m4_soundLink',`<img src="m4_host/fa-da/images/speaker.svg" class="speakerIcon" onclick="play(&quot;$1&quot;)" />')
+define(`m4_soundLink',`<audio preload="metadata" type="audio/ogg" controls><source src="m4_host/fa-da/audio/$1">Your browser does not support audio</audio>')
 
 define(`m4_noun_link',`<a href="m4_host/fa-da/nouns/`$1'">`$2'</a>')
 define(`m4_verb_link',`<a href="m4_host/fa-da/verbs/`$1'">`$2'</a>')
