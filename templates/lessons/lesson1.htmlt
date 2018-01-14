@@ -30,7 +30,7 @@ function showPersianLetter(latinLetter){
   else if (latinLetter == "å") latinLetter = "aa";
   var container = document.getElementById("pa-letter");
   var result = "";
-  var map = {a: "آ \\ ا \\ ع \\ َ", b: "ب", c: "س \\ ک", d:"د", e:"اِ", f:"ف", g:"گ", h:"ه \\ ح", i:"ی", j:"ج", k:"ک", l:"ل", m:"م", n:"ن", o:"و", p:"پ", q:"ق", r:"ر \\ غ", s:"س \\ ص", t:"ت", u:"و \\ ُ", v:"و", w:"و", x:"کس", y:"", z:"", ae:"َ", oe:"", aa:"آ \\ و"};
+  var map = {a: "آ \\ ا \\ ع \\ َ", b: "ب", c: "س \\ ک", d:"د", e:"اِ", f:"ف", g:"گ", h:"ه \\ ح", i:"ی", j:"ج", k:"ک", l:"ل", m:"م", n:"ن", o:"و", p:"پ", q:"ق", r:"ر \\ غ", s:"س \\ ص", t:"ت", u:"و \\ ُ", v:"و", w:"و", x:"ـکْس", y:"", z:"", ae:"َ", oe:"", aa:"آ \\ و"};
   if (map.hasOwnProperty(latinLetter)) {
     result = map[latinLetter];
   }

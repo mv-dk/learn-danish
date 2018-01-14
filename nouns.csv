@@ -1,27 +1,135 @@
 key;foreign-sg;foreign-pl;da-sg-i;da-sg-d;da-pl-i;da-pl-d
-MAN;مرد;مردان;en mand;manden;flere mænd;alle mændene
-WOMAN;زن;زنان;en kvinde;kvinden;flere kvinder;alle kvinderne
-BOY;پسر;پسران;en dreng;drengen;flere drenge;alle drengene
-GIRL;دختر;دختران;en pige;pigen;flere piger;alle pigerne
-HOUSE;خانه;خانه‌ها;et hus;huset;flere huse;alle husene
-NAME;اسم;اسم‌ها;et navn;navnet;flere navne;alle navnene
-FATHER;پدر;پدر‌ها;en far / en fader;faren / faderen;flere fædre;alle fædrene
-MOTHER;مادر;مادر‌ها;en mor / en moder;moren / moderen;flere mødre;alle mødrene
-ACCIDENT;تصادف;تصادف‌ها;en ulykke;ulykken;flere ulykker;alle ulykkerne
-AIRPLANE;هواپیما;هواپیما‌ها;en flyvemaskine;flyvemaskinen;flere flyvemaskiner;alle flyvemaskinerne
-ACTOR_1;هنرپیشه;هنرپیشه;en skuespiller (1);skuespilleren;flere skuespillere;alle skuespillerne
-ACTOR_2;بازیگر;بازیکر‌ها;en skuespiller (2);skuespilleren;flere skuespillere;alle skuespillerne
-ADDRESS;آدرس;آدرش‌ها;en adresse;adressen;flere adresser;alle adresserne
+ACCIDENT;یک تصادف;تصادف‌ها;en ulykke;ulykken;flere ulykker;alle ulykkerne
+ACTOR_1;یک هنرپیشه;هنرپیشه;en skuespiller (1);skuespilleren;flere skuespillere;alle skuespillerne
+ACTOR_2;یک بازیگر;بازیکر‌ها;en skuespiller (2);skuespilleren;flere skuespillere;alle skuespillerne
+ADDRESS;یک آدرس;آدرش‌ها;en adresse;adressen;flere adresser;alle adresserne
 AFTERNOON;بغد از ظهر; ;en eftermiddag;eftermiddagen;flere eftermiddage;alle eftermiddagene
-AMBULANCE;آمبولانس;آمبولانس‌ها;en ambulance;ambulancen;flere ambulancer;alle ambulancerne
-ANTIBIOTIC;آنتی‌بیوتیک;آنتی‌بیوتیک‌ها;et antibiotika;antibiotikaet;noget antibiotika;al antibiotikaet
-SPRING;بهار;بهار‌ها;et forår;foråret;flere forår;alle forårene
-SUMMER;تابستان;تابستان‌ها;en sommer;sommeren;flere somre;alle somrene
-WINTER;زمستان;زمستان‌ها;en vinter;vinteren;flere vintre;alle vintrene
-AUTUMN;پاییز;پاییز‌ها;et efterår;efteråret;flere efterår;alle efterårene
-YEAR;سال;سال‌ها;et år;året;flere år;alle årene
-CLOUD;ابر;ابر‌ها;en sky;skyen;flere skyer;alle skyerne
-SKY;آسمان;آسمان‌ها;en himmel;himlen;flere himle;alle himlene
-SUN;خورشید;خورشید‌ها;en sol;solen;flere sole;alle solene
-PLANET;سیاره;سیاره‌ها;en planet;planeten;flere planeter;alle planeterne
-CAR;ماشین;ماشین‌ها;en bil;bilen;flere biler;alle bilerne
+AIRPLANE;یک هواپیما;هواپیما‌ها;en flyvemaskine;flyvemaskinen;flere flyvemaskiner;alle flyvemaskinerne
+AMBULANCE;یک آمبولانس;آمبولانس‌ها;en ambulance;ambulancen;flere ambulancer;alle ambulancerne
+ANNIVERSARY;یک سالگرد;سالگرد‌ها;en årsdag;årsdagen;flere årsdage;alle årsdagene
+ANTIBIOTIC;یک آنتی‌بیوتیک;آنتی‌بیوتیک‌ها;et antibiotika;antibiotikaet;noget antibiotika;al antibiotikaet
+AREA_1;یک محله;محاه‌ها;et område;området;flere områder;alle områderne
+AUTUMN;یک پاییز;پاییز‌ها;et efterår;efteråret;flere efterår;alle efterårene
+BACK;یک پشت;پشت‌ها;en ryg;ryggen;flere rygge;alle ryggene
+BACKACHE;یک کمردرد;کمردرد‌ها;en rygsmerte;rygsmerten;flere rygsmerter;alle rygsmerterne
+BATHROOM;یک حمّام;همّام‌ها;et badeværelse;badeværelset;flere badeværelser;alle badeværelserne
+BEARD;یک ریش;ریش‌ها;et skæg;skægget;flere skæg;alle skæggene
+BED;یک تخت;تخت‌ها;en seng;sengen;flere senge;alle sengene
+BEDROOM;یک اتاق خواب;اتاق خواب‌ها;et soveværelse;soveværelset;flere soveværelser;alle soveværelserne
+BIRTH;یک تولّد;تواّد‌ها;en fødsel;fødslen;flere fødsler;alle fødslerne
+BOARD_MEETING;یک جلسه;جلسه‌ها;et bestyrelsesmøde;bestyrelsesmødet;flere bestyrelsesmøder;alle bestyrelsesmøderne
+BOOK;یک کتاب;کتاب‌ها;en bog;bogen;flere bøger;alle bøgerne
+BOSS;یک رئیس;رئیس‌ها;en chef;chefen;flere chefer;alle cheferne
+BOY;یک پسر;پسران;en dreng;drengen;flere drenge;alle drengene
+BREAD;یک نان;نان‌ها;et brød;brødet;flere brød;alle brødene
+BREAKFAST;یک صبحانه;صبحانه‌ها;en morgenmad;morgenmaden;mere morgenmad;al morgenmaden
+BROTHER;یک برادر;برادر‌ها;en bror;broren;flere brødre;alle brødrene
+CAKE;یک کیک;کیک‌ها;en kage;kagen;flere kager;alle kagerne
+CAN;یک قوطی;قوطی‌ها;en dåse;dåsen;flere dåser;alle dåserne
+CAR;یک ماشین;ماشین‌ها;en bil;bilen;flere biler;alle bilerne
+CAR_KEY;یک سوئیچ;سوئیچ‌ها;en bilnøgle;bilnøglen;flere bilnøgler;alle bilnøglerne
+CARPET;یک فرش;فرش‌ها;et tæppe;tæppet;flere tæpper;alle tæpperne
+CAVIAR;خاویار;خاویار‌ها;noget kaviar;karviaren;mere kaviar;al kaviaren
+CENTRE;یک مرکز;مرکز‌ها;et centrum;centrummet;flere centre;alle centrene
+CHAIR;یک صندلی;صندلی;en stol;stolen;flere stole;alle stolene
+CHEESE;یک پنیر;پنیر‌ها;en ost;osten;flere oste;alle ostene
+CHEQUE;یک چک;چک‌ها;en check;checken;flere checks;alle checkene
+CHILD;یک بچه;بچه‌ها;et barn;barnet;flere børn;alle børnene
+CINEMA;یک سینما;سینما‌ها;en biograf;biografen;flere biografer;alle biograferne
+CITY;یک شهر;شهر‌ها;en by;byen;flere byer;alle byerne
+CLASS;یک کلاس;کلاس‌ها;en klasse;klassen;flere klasser;alle klasserne
+CLOUD;یک ابر;ابر‌ها;en sky;skyen;flere skyer;alle skyerne
+COFFEE;قهوه;قهوه‌ها;noget kaffe;kaffen;mere kaffe;al kaffen
+COIN;یک سکّه;سکّه‌ها;en mønt;mønten;flere mønter;alle mønterne
+COLD;یک سرما;سرما‌ها;en forkølelse;forkølelsen;flere forkølelser;alle forkølelserne
+COMPUTER;یک کامپیوتر;کامپیوتر‌ها;en computer;computeren;flere computere;alle computerne
+CONCERT;یک کنسرت;کنسرت‌ها;en koncert;koncerten;flere koncerter;alle koncerterne
+COUNTRY;یک کشور;کشور‌ها;et land;landet;flere lande;alle landene
+CUCUMBER;یک خیار;خیار‌ها;en agurk;agurken;flere agurker;alle agurkerne
+DAY;یک روز;روز‌ها;en dag;dagen;flere dage;alle dagene
+DEGREE;یک درجه;درجه‌ها;en grad;graden;flere grader;alle graderne
+DELAY;یک تأخیر;تأخیر‌ها;en forsinkelse;forsinkelsen;flere forsinkelser;alle forsinkelserne
+DIARY;یک تقویم;تقویم‌ها;en kalender;kalenderen;flere kalendere;alle kalenderne
+DINNER;یک شام;شام‌ها;noget aftensmad;aftensmaden;mere aftensmad;al aftensmaden
+DOCTOR;یک دکتر;دکتر‌ها;en læge;lægen;flere læger;alle lægerne
+DOOR;یک در;در‌ها;en dør;døren;flere døre;alle dørene
+DRINK;یک نوشیدنی;نوشیدنی‌ها;en drik;drikken;flere drikke;alle drikkene
+DRIVING_LICENSE;یک گواهی‌نامه;گواهی نامه‌ها;et kørekort;kørekortet;flere kørekort;alle kørekortene
+EMAIL;یک ایمیل;ایمیل‌ها;en email;emailen;flere emails;alle emailsne
+EGG;یک تخم مرغ;تخم مرغ‌ها;et æg;ægget;flere æg;alle æggene
+EMBASSY;یک سفارت;سفارت‌ها;en embassade;embassaden;flere embassader;alle embassaderne
+EVENING;یک شب;شب‌ها;en aften;aftenen;flere aftener;alle aftenerne
+EXHIBITION;یک نمایشگاه;نمایشگاه‌ها;en udstilling;udstillingen;flere udstillinger;alle udstillingerne
+EYE;یک چشم;چشم‌ها;et øje;øjet;flere øjne;alle øjnene
+FACE;یک صورت;صورت‌ها;et ansigt;ansigtet;flere ansigter;alle ansigterne
+FAMILY;یک خانواده;خانواده‌ها;en familie;familien;flere familier;alle familierne
+FATHER;یک پدر;پدر‌ها;en far / en fader;faren / faderen;flere fædre;alle fædrene
+FAX;یک فکس;فسک‌ها;en fax;faxen;flere faxe;alle faxene
+FILM;یک فیلم;فینم‌ها;en film;filmen;flere film;alle filmene
+FIRE;یک آتش;آتش‌ها;en brand;branden;flere brande;alle brandene
+FLAT;یک اپارتمان;اپارتمان‌ها;en lejlighed;lejligheden;flere lejligheder;alle lejlighederne
+FLOOR;یک طبقه;طبقه‌ها;en etage;etagen;flere etager;alle etagerne
+FOOD;غذا;غذا‌ها;noget mad;maden;mere mad;al maden
+FRIDAY;یک جمعه;جمعه‌ها;en fredag;fredagen;flere fredage;alle fredagene
+FRIDGE;یک یخچال;یخچال‌ها;et køleskab;køleskabet;flere køleskabe;alle køleskabene
+FRIEND;یک دوست;دوست‌ها;en ven;vennen;flere venner;alle vennerne
+FRUIT;یک میوه;میوه‌ها;en frugt;frugten;flere frugter;alle frugterne
+GARDEN;یک حیات;حیات‌ها;en have;haven;flere haver;alle haverne
+GIFT;یک هدیه;هدیه‌ها;en gave;gaven;flere gaver;alle gaverne
+GIRL;یک دختر;دختران;en pige;pigen;flere piger;alle pigerne
+GUEST;یک مهمان;مهمان‌ها;en gæst;gæsten;flere gæster;alle gæsterne
+HAIR;یک مو;مو‌ها;et hår;håret;flere hår;alle hårene
+HALL;یک سالن;سالن‌ها;en salon;salonen;flere saloner;alle salonerne
+HEALTH;یک حال;حال‌ها;et helbred;helbredet;flere helbred;alle helbredene
+HEIGHT;یک قدّ;قدّ‌ها;en højde;højden;flere højder;alle højderne
+HOBBY;یک سرگرمی;سرگرمی‌ها;en hobby;hobbyen;flere hobbyer;alle hobbyerne
+HOME;یک منزل;منزل‌ها;et hjem;hjemmet;flere hjem;alle hjemmene
+HOMELESSNESS;آوارگی;آوارگی‌ها;en hjemløshed;hjemløsheden;mere hjemløshed;al hjemløsheden
+HOSPITAL;یک بیمارستان;بیمارستان‌ها;et hospital;hospitalet;flere hospitaler;alle hospitalerne
+HOT_CHOCOLATE;شیر کاکائو;شیر کاکائو‌ها;noget varm kakao;den varme kakao;mere varm kakao;al den varme kakao
+HOTEL;یک هتل;هتل‌ها;et hotel;hotellet;flere hoteller;alle hotellerne
+HOUR;یک ساعت;ساعت‌ها;en time;timen;flere timer;alle timerne
+HOUSE;یک خانه;خانه‌ها;et hus;huset;flere huse;alle husene
+HUSBAND;یک شوهر;شوهر‌ها;en mand;manden;flere mænd;alle mændene
+ICE_CREAM;یک بستنی;بستنی‌ها;en is;isen;flere is;alle isene
+INCOME;یک درآمد;درآمد‌ها;en indkomst;indkomsten;flere indkomster;alle indkomsterne
+JEALOUSY;حسودی;حسودی‌ها;en jealousi;jealousien;mere jealousi;al jealousien
+JOB;یک کار;کار‌ها;et arbejde;arbejdet;mere arbejde;al arbejdet
+JOURNEY;یک سفر;سفر‌ها;en rejse;rejsen;flere rejser;alle rejserne
+JOY;یک شاده;شاده‌ها;en glæde;glæden;flere glæder;alle glæderne
+KILO;یک کیلو;کیلو‌ها;et kilo;kiloet;flere kilo;alle kiloene
+KIND;یک نوع;نوع‌ها;en slags;slagsen;flere slags;alle slags
+KITCHEN;یک اشپزخانه;اشپزخانه‌ها;et køkken;køkkenet;flere køkkener;alle køkkenerne
+LADY;یک خانم;خانم‌ها;en frue;fruen;flere fruer;alle fruerne
+LETTER_1;یک نامه;نامه‌ها;et brev;brevet;flere breve;alle brevene
+LETTER_2;یک حرف;حرف‌ها;et bogstav;bogstavet;flere bogstaver;alle bogstaverne
+LIBRARY;یک کتابخانه;کتابخانه‌ها;et bibliotek;biblioteket;flere biblioteker;alle bibliotekerne
+LIGHT;یک چراغ;چداغ‌ها;et lys;lyset;flere lys;alle lysene
+LIGHTER;یک فندک;فندک‌ها;en lighter;lighteren;flere lightere;alle lighterne
+LUNCH;یک ناهار;ناهار‌ها;en frokost;frokosten;flere frokoster;alle frokosterne
+MAN;یک مرد;مردان;en mand;manden;flere mænd;alle mændene
+MANAGER;یک مدیر;مدیر‌ها;en leder;lederen;flere ledere;alle lederne
+MARRIAGE;یک ازدواج;ازدواج‌ها;et bryllup;brylluppet;flere bryllupper;alle bryllupperne
+MEAL;یک غذا;غذا‌ها;et måltid;måltidet;flere måltider;alle måltiderne
+MEAT;گوشت;گوشت‌ها;noget kød;kødet;mere kød;al kødet
+MEDICINE;یک دارو;دارو‌ها;en medicin;medicinen;mere medicin;al medicinen
+MEETING;یک ملاقات;ملاقات‌ها;et møde;mødet;flere møder;alle møderne
+MEMBER;یک عضو;غضو‌ها;et medlem;medlemmet;flere medlemmer;alle medlemmer
+MESSAGE;یک پیغام;پیغام‌ها;en besked;beskeden;flere beskeder;alle beskederne
+MILK;شیر;شیر‌ها;noget mælk;mælken;mere mælk;al mælken
+MILLIONAIRE;یک میلیونر;میلیونر‌ها;en millionær;millionæren;flere millionærer;alle millionærerne
+MINUTE;یک دقیقه;پقیقه‌ها;et minut;minuttet;flere minutter;alle minutterne
+MIRROR;یک آینه;آینه‌ها;et spejl;spejlet;flere spejle;alle spejlene
+MONDAY;دوشنبه;دوشنبه‌ها;en mandag;mandagen;flere mandage;alle mandagene
+MONEY;پول;پول‌ها;nogle penge;penge;flere penge;alle pengene
+MOTHER;یک مادر;مادر‌ها;en mor / en moder;moren / moderen;flere mødre;alle mødrene
+NAME;یک اسم;اسم‌ها;et navn;navnet;flere navne;alle navnene
+NUMBER;یک تعداد;تعداد‌ها;et tal;tallet;flere tal;alle tallene
+PLANET;یک سیاره;سیاره‌ها;en planet;planeten;flere planeter;alle planeterne
+SKY;یک آسمان;آسمان‌ها;en himmel;himlen;flere himle;alle himlene
+SPRING;یک بهار;بهار‌ها;et forår;foråret;flere forår;alle forårene
+SUMMER;یک تابستان;تابستان‌ها;en sommer;sommeren;flere somre;alle somrene
+SUN;یک خورشید;خورشید‌ها;en sol;solen;flere sole;alle solene
+WINTER;یک زمستان;زمستان‌ها;en vinter;vinteren;flere vintre;alle vintrene
+WOMAN;یک زن;زنان;en kvinde;kvinden;flere kvinder;alle kvinderne
+YEAR;یک سال;سال‌ها;et år;året;flere år;alle årene

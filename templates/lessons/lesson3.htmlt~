@@ -1,0 +1,102 @@
+divert(-1)
+include(`base.m4')
+divert(0)dnl
+m4_header
+
+  <h1>Jeg og du</h1>
+
+
+<!--
+<ul>
+  <li>
+	<span class="danish">
+	  Some list item
+	</span>
+	=
+	<span class="persian">
+	  سلام دوستم
+	</span>
+  </li>
+</ul>
+-->
+
+<table>
+  <tr>
+	<th colspan="2">Ental</th>
+	<th colspan="2" class="leftborder">Flertal</th>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  من
+	</td>
+	<td>
+	  jeg
+	</td>
+	<td class="dark persian leftborder">
+	  ما
+	</td>
+	<td>
+	  vi
+	</td>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  نو
+	</td>
+	<td>
+	  du
+	</td>
+	<td class="dark persian leftborder">
+	  شما
+	</td>
+	<td>
+	  I
+	</td>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  او
+	</td>
+	<td>
+	  m4_mark1(han)/m4_mark2(hun)
+	</td>
+	<td class="dark persian leftborder">
+	  انها
+	</td>
+	<td>
+	  de
+	</td>
+  </tr>
+</table>
+<hr />
+
+<p>
+<div style="display:flex; align-items: center;">
+  <div class="leftColumn" style="width:30%" >
+	<img src="m4_host/fa-da/images/man.svg" style="height: 20vh;" />
+  </div>
+</div>
+<div>
+  m4_mark1(Han) er en m4_noun_link(`man.html',`mand').<br />
+  m4_mark1(Han) er glad.<br />
+  m4_mark1(Han) hedder Jan.<br />
+</div>
+</p>
+<p>
+<div style="display:flex; align-items: center;">
+  <div class="leftColumn" style="width:30%">
+	<img src="m4_host/fa-da/images/woman.svg" style="height: 20vh;" />
+  </div>
+</div>
+<div>
+  m4_mark2(Hun) er en m4_noun_link(`woman.html',`kvinde').<br />
+  m4_mark2(Hun) er ogs&aring; glad.<br />
+</div>
+</p>
+m4_ddg_image_link(`man',`mænd')
+m4_ddg_image_link(`woman',`kvinder')
+
+m4_youtube_link(`flSY2xSemjI',`Æblemand')
+m4_youtube_link(`b0gCMrbB-Dk',`Kvinde min',`Kim Larsen')
+
+m4_footer

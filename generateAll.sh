@@ -22,7 +22,7 @@ result=0
 
 # create all verb pages
 #./createAllVerbPages.sh $outputDir/verbs
-cp -r $templateDir/verbs "$outputDir/"
+#cp -r $templateDir/verbs "$outputDir/"
 
 # create one allVerb page
 #./createAllVerbsPage.sh

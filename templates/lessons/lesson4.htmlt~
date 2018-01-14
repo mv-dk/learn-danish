@@ -1,0 +1,79 @@
+divert(-1)
+include(`base.m4')
+divert(0)dnl
+m4_header
+
+  <h1>Mig og dig</h1>
+
+<table>
+  <tr>
+	<th colspan="2">Ental</th>
+	<th colspan="2" class="leftborder">Flertal</th>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  من
+	</td>
+	<td>
+	  m4_mark1(jeg)
+	</td>
+	<td class="dark persian leftborder">
+	  ما
+	</td>
+	<td>
+	  vi
+	</td>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  نو
+	</td>
+	<td>
+	  m4_mark2(du)
+	</td>
+	<td class="dark persian leftborder">
+	  شما
+	</td>
+	<td>
+	  I
+	</td>
+  </tr>
+  <tr>
+	<td class="dark persian">
+	  او
+	</td>
+	<td>
+	  han/hun
+	</td>
+	<td class="dark persian leftborder">
+	  انها
+	</td>
+	<td>
+	  de
+	</td>
+  </tr>
+</table>
+<hr />
+
+<p>
+  <ul>
+    <li>m4_mark1(Jeg) hedder Martin.</li>
+	<li>Hvad hedder m4_mark2(du)?</li>
+	<li>m4_mark1(Jeg) arbejder.</li>
+	<li>m4_mark1(Jeg) g&aring;r i skole.</li>
+	<li>m4_mark2(Du) og m4_mark1(jeg) bor i Danmark.</li>
+	<li>m4_mark2(Du) bor i K&oslash;benhavn, og m4_mark1(jeg) bor i Odense.</li>
+  </ul>
+</p>
+
+<p>
+  <img src="m4_host/fa-da/images/du_jeg.svg" />
+</p>
+
+m4_ddg_image_link(``ego, id, self'',`jeg')
+m4_ddg_image_link(`you',`du')
+
+m4_youtube_link(`n07mYBm2XeM',``Hvad gør vi nu, lille du'',`Kim Larsen')
+m4_youtube_link(`7KwtJJxv10Q',`Du og jeg',`Bjørn & Okay')
+
+m4_footer
