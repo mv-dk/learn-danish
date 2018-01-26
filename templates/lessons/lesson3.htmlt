@@ -70,8 +70,8 @@ m4_header
   <img src="m4_host/fa-da/images/du_jeg.svg" />
 </p>
 
-m4_ddg_image_link(``ego, id, self'',`jeg')
-m4_ddg_image_link(`you',`du')
+m4_ddg_image_link(``pointing at self'',`jeg')
+m4_ddg_image_link(``pointing at you'',`du')
 
 m4_youtube_link(`n07mYBm2XeM',``Hvad gør vi nu, lille du'',`Kim Larsen')
 m4_youtube_link(`7KwtJJxv10Q',`Du og jeg',`Bjørn & Okay')

@@ -47,7 +47,7 @@ define(`m4_soundLink',`<audio preload="metadata" type="audio/ogg" controls><sour
 define(`m4_noun_link',`<a href="m4_host/fa-da/nouns/`$1'">`$2'</a>')
 define(`m4_verb_link',`<a href="m4_host/fa-da/verbs/`$1'">`$2'</a>')
 
-define(`m4_ddg_image_link',`<p><img class="ddgImageLink" src="m4_imgs/ddg_image_link.svg" />&nbsp;&nbsp;<a href="https://duckduckgo.com/?q=$1&t=hj&iax=images&ia=images">Billeder af $2</a></p>')
+define(`m4_ddg_image_link',`<p><img class="ddgImageLink" src="m4_imgs/ddg_image_link.svg" />&nbsp;&nbsp;<a href="https://duckduckgo.com/?q=$1&t=hj&iax=images&ia=images">Billeder af &quot;$2&quot;</a></p>')
 
 define(`m4_youtube_link',`<p><img class="youtubeLink" src="m4_imgs/youtube_link.svg" />&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=$1">$2
 ifelse(`',$3,`',` ($3)')</a></p>')
@@ -62,3 +62,6 @@ define(`m4_danish',`<span class="danish">$1</span>')
 define(`m4_persian',`<span class="persian">$1</span>')
 
 define(`m4_lesson_link',`<a href="lessons/$3">m4_danish($1) = m4_persian($2)</a>')
+
+define(`m4_h_examples',`<h2>Eksempler</h2>')
+define(`m4_tooltip',`<span class="tooltip">$1<span class="tooltipText persian">$2</span></span>')

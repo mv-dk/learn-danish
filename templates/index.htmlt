@@ -24,6 +24,9 @@ Her kan man l&aelig;re dansk.
   <li>
     m4_lesson_link(``Han, hun'',``من, تو, او'', `lesson2.html') 
   </li>
+  <li>
+	m4_lesson_link(``Synes, tror, mener'',``فکر کردن، باور داشنن'', `synes_tror_mener.html')
+  </li>
   
 </ul>
 
