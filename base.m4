@@ -65,3 +65,4 @@ define(`m4_lesson_link',`<a href="lessons/$3">m4_danish($1) = m4_persian($2)</a>
 
 define(`m4_h_examples',`<h2>Eksempler</h2>')
 define(`m4_tooltip',`<span class="tooltip">$1<span class="tooltipText persian">$2</span></span>')
+define(`m4_hiddenPersian',`<span class="hoverVisible persian">$1&rlm;</span>')

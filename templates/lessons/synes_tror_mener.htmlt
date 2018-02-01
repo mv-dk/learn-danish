@@ -19,21 +19,26 @@ m4_h_examples
 
 <p>
   <ul>
-	<li>Jeg synes m4_tooltip(at,که) m4_tooltip(bilen,آن ماشین) er m4_tooltip(flot,قشنگ) = <span class="hoverVisible persian">من فکر می‌کنم که آن ماشین قشنگ است.&rlm;</span></li>
-	<li>Jeg synes at m4_tooltip(blå,آبی) er en flot m4_tooltip(farve,رنگ) = <span class="hoverVisible persian">من فکر می‌کنم آبی رنگ قشنگی است.&rlm;</span></li>
-	<li>Jeg synes at hun er m4_tooltip(sød,خوش) = <span class="hoverVisible persian">من فکر می‌کنم که آو خوش است.&rlm;</span></li>
-	<li>Jeg synes at det var en m4_tooltip(dejlig,دلپسند) m4_tooltip(fest,مهمونی) = <span class="hoverVisible persian">من فکر می‌کمن که مهمونی دلپسند بود.&rlm;</span></li>
-	<li>Jeg synes det er m4_tooltip(underligt,عجیب), at han ikke m4_tooltip(kom,آمد) = <span class="hoverVisible persian">من فکر می‌کنم که عجیب است که او نیامد.&rlm;</span></li>
-	<li>Jeg synes at den er m4_tooltip(for,خیلی) m4_tooltip(dyr,گرون) = <span class="hoverVisible persian">به نظدم این خیلی گرونه.&rlm;</span></li>
+	<li>Jeg synes m4_tooltip(at,که) m4_tooltip(bilen,آن ماشین) er m4_tooltip(flot,قشنگ)
+	    = 
+	    m4_hiddenPersian(من فکر می‌کنم که آن ماشین قشنگ است.)</li>
+	<li>Jeg synes at m4_tooltip(blå,آبی) er en flot m4_tooltip(farve,رنگ) = m4_hiddenPersian(من فکر می‌کنم آبی رنگ قشنگی است.)</li>
+	<li>Jeg synes at hun er m4_tooltip(sød,خوش) = m4_hiddenPersian(من فکر می‌کنم که آو خوش است.)</li>
+	<li>Jeg synes at det var en m4_tooltip(dejlig,دلپسند) m4_tooltip(fest,مهمونی) = m4_hiddenPersian(من فکر می‌کمن که مهمونی دلپسند بود.)</li>
+	<li>Jeg synes det er m4_tooltip(underligt,عجیب), at han ikke m4_tooltip(kom,آمد) = m4_hiddenPersian(من فکر می‌کنم که عجیب است که او نیامد.)</li>
+	<li>Jeg synes at den er m4_tooltip(for,خیلی) m4_tooltip(dyr,گرون) = m4_hiddenPersian(به نظدم این خیلی گرونه.)</li>
+	<li>Jeg synes, at farsi er et sv&aelig;rt sprog = m4_hiddenPersian(من فکر می‌کنم فارسی را یک زبان سخته.)</li>
   </ul>
 </p>
 
 <h3>Tror</h3>
 <p>
   <ul>
-	<li>Jeg tror at m4_tooltip(bilen,ماشین) er m4_tooltip(blå,آبی) (men jeg ved det ikke!) = <span class="hoverVisible persian">من فکر می‌کنم که ماشین آبی است (ولی نمی‌دونم).&rlm;</span></li>
-	<li>Jeg tror på at Jesus Kristus = <span class="hoverVisible persian">من به عیسی مسیح ایمان دارم</span></li>
-	<li>Jeg tror at m4_tooltip(festen,آن مهمونی) er på m4_tooltip(fredag,جمعه) = <span class="hoverVisible persian">من فکر می‌کنم که مهمونی در جمعه است.&rlm;</span></li>
+	<li>Jeg tror at m4_tooltip(bilen,ماشین) er m4_tooltip(blå,آبی) (men jeg ved det ikke!) = m4_hiddenPersian(من فکر می‌کنم که ماشین آبی است (ولی نمی‌دونم).)</li>
+	<li>Jeg tror på at Jesus Kristus = m4_hiddenPersian(من به عیسی مسیح ایمان دارم)</li>
+	<li>Jeg tror at m4_tooltip(festen,آن مهمونی) er på m4_tooltip(fredag,جمعه) = m4_hiddenPersian(من فکر می‌کنم که مهمونی در جمعه است.)</li>
+	<li>Jeg tror at m4_tooltip(overs&aelig;ttelsen,این ترجمه) er m4_tooltip(rigtig,راست) = m4_hiddenPersian(من فکر می‌کنم که این ترجمه راسته.)</li>
+	<li>Jeg tror, at han m4_tooltip(taler,صحبت می‌کند) m4_tooltip(engelsk,انگلیسی) = m4_hiddenPersian(من فکر می‌کنم اون انگلیسی صحبت می‌کند.)</li>
   </ul>
 </p>
 
